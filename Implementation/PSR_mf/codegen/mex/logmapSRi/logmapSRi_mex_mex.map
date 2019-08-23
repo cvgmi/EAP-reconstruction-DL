@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		logmapSRi;
+		logmapSRi_initialize;
+		logmapSRi_terminate;
+		logmapSRi_atexit;
+	local:
+		*;
+};

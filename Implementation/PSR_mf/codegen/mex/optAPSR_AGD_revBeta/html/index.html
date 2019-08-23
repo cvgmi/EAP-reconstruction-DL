@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/html/index.css" />
+
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "optAPSR_AGD_revBeta1_mcode.html",
+ fpath1: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/optAPSR_AGD_revBeta.m",
+ lines1: [1, 1, 80],
+ watch1: "optAPSR_AGD_revBeta1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/optAPSR_AGD_revBeta.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/optAPSR_AGD_revBeta.m')\">optAPSR_AGD_revBeta</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 42 to gradientAPSR", "289#srcline1" ], [ "From line 44 to projectTP", "291#srcline1" ], [ "From line 51 to expmapPSR", "296#srcline1" ], [ "From line 52 to logmapPSR", "304#srcline1" ], [ "From line 53 to expmapPSR", "296#srcline1" ], [ "From line 55 to objPSR", "369#srcline1" ], , ,  ],
+ MATLABcode218: "logmapSRi218_mcode.html",
+ fpath218: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapSRi.m",
+ lines218: [1, 1, 20],
+ watch218: "logmapSRi218_watch.html",
+ title218: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapSRi.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapSRi.m')\">logmapSRi</a></span>",
+ tcall218: [ [ "From gradientASR line 21", "288#F218N9:B54" ], [ "From logmapPSRi line 17", "305#F218N9:B58" ] ],
+ scall218: [  ],
+ MATLABcode288: "gradientASR288_mcode.html",
+ fpath288: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientASR.m",
+ lines288: [1, 1, 35],
+ watch288: "gradientASR288_watch.html",
+ title288: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientASR.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientASR.m')\">gradientASR</a></span>",
+ tcall288: [ [ "From gradientAPSR line 19", "289#F288N6:B62" ] ],
+ scall288: [ [ "From line 21 to logmapSRi", "218#srcline1" ] ],
+ MATLABcode289: "gradientAPSR289_mcode.html",
+ fpath289: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientAPSR.m",
+ lines289: [1, 1, 21],
+ watch289: "gradientAPSR289_watch.html",
+ title289: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientAPSR.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientAPSR.m')\">gradientAPSR</a></span>",
+ tcall289: [ [ "From optAPSR_AGD_revBeta line 42", "1#F289N5:B126" ] ],
+ scall289: [ [ "From line 19 to gradientASR", "288#srcline1" ] ],
+ MATLABcode290: "projectT290_mcode.html",
+ fpath290: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectT.m",
+ lines290: [1, 1, 17],
+ watch290: "projectT290_watch.html",
+ title290: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectT.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectT.m')\">projectT</a></span>",
+ tcall290: [ [ "From projectTP line 16", "291#F290N12:B61" ] ],
+ scall290: [  ],
+ MATLABcode291: "projectTP291_mcode.html",
+ fpath291: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectTP.m",
+ lines291: [1, 1, 18],
+ watch291: "projectTP291_watch.html",
+ title291: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectTP.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectTP.m')\">projectTP</a></span>",
+ tcall291: [ [ "From optAPSR_AGD_revBeta line 44", "1#F291N13:B134" ] ],
+ scall291: [ [ "From line 16 to projectT", "290#srcline1" ] ],
+ MATLABcode296: "expmapPSR296_mcode.html",
+ fpath296: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/expmapPSR.m",
+ lines296: [1, 1, 17],
+ watch296: "expmapPSR296_watch.html",
+ title296: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/expmapPSR.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/expmapPSR.m')\">expmapPSR</a></span>",
+ tcall296: [ [ "From optAPSR_AGD_revBeta line 51", "1#F296N3:B164" ], [ "From optAPSR_AGD_revBeta line 53", "1#F296N3:B206" ] ],
+ scall296: [  ],
+ MATLABcode304: "logmapPSR304_mcode.html",
+ fpath304: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSR.m",
+ lines304: [1, 1, 29],
+ watch304: "logmapPSR304_watch.html",
+ title304: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSR.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSR.m')\">logmapPSR</a></span>",
+ tcall304: [ [ "From optAPSR_AGD_revBeta line 52", "1#F304N7:B187" ] ],
+ scall304: [  ],
+ MATLABcode305: "logmapPSRi305_mcode.html",
+ fpath305: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSRi.m",
+ lines305: [1, 1, 19],
+ watch305: "logmapPSRi305_watch.html",
+ title305: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSRi.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSRi.m')\">logmapPSRi</a></span>",
+ tcall305: [ [ "From objPSR line 25", "369#F305N8:B40" ] ],
+ scall305: [ [ "From line 17 to logmapSRi", "218#srcline1" ] ],
+ MATLABcode369: "objPSR369_mcode.html",
+ fpath369: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/objPSR.m",
+ lines369: [1, 1, 30],
+ watch369: "objPSR369_watch.html",
+ title369: "Function: <span class='functionname'><a title='/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/objPSR.m' class='functionlink' href=\"matlab: open('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/objPSR.m')\">objPSR</a></span>",
+ tcall369: [ [ "From optAPSR_AGD_revBeta line 55", "1#F369N10:B223" ] ],
+ scall369: [ [ "From line 25 to logmapPSRi", "305#srcline1" ] ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/optAPSR_AGD_revBeta.m",
+ fpath2: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/isBuiltInNumeric.m",
+ fpath3: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/ismatrix.m",
+ fpath4: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/scalarEg.p",
+ fpath5: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalar_eg.m",
+ fpath6: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/scalexpAlloc.p",
+ fpath7: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalexp_alloc.m",
+ fpath8: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_floor.m",
+ fpath9: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath10: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/power.m",
+ fpath11: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/mpower.m",
+ fpath12: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_error.m",
+ fpath13: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_sqrt.m",
+ fpath14: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/sqrt.m",
+ fpath15: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/assert.m",
+ fpath16: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalexp_compatible.m",
+ fpath17: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/div.p",
+ fpath18: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_div.m",
+ fpath19: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath20: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath21: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_class.m",
+ fpath22: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_ndims_varsized.m",
+ fpath23: "/opt/matlab2014b/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath24: "/opt/matlab2014b/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath25: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_switch_helper.m",
+ fpath26: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath27: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath28: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath29: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexPlus.m",
+ fpath30: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_plus.m",
+ fpath31: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexMinus.m",
+ fpath32: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_minus.m",
+ fpath33: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/squeeze.m",
+ fpath34: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/eml_mtimes_helper.m",
+ fpath35: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/inline.p",
+ fpath36: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/use_refblas.p",
+ fpath37: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/threshold.p",
+ fpath38: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xgemm.p",
+ fpath39: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexTimes.m",
+ fpath40: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xgemm.p",
+ fpath41: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/int.p",
+ fpath42: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/size_ptr.p",
+ fpath43: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/c_cast.p",
+ fpath44: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xgemm.m",
+ fpath45: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_assert_valid_size_arg.m",
+ fpath46: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath47: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_is_integer_class.m",
+ fpath48: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath49: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_float_model.m",
+ fpath50: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_min_or_max.m",
+ fpath51: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath52: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/prodsize.m",
+ fpath53: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/repmat.m",
+ fpath54: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/diag.m",
+ fpath55: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath56: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/assertValidDim.m",
+ fpath57: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_assert_valid_dim.m",
+ fpath58: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/process_sumprod_inputs.m",
+ fpath59: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/combine_vector_elements.m",
+ fpath60: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/sumprod.m",
+ fpath61: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath62: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_li_find.m",
+ fpath63: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_isequal_core.m",
+ fpath64: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath65: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath66: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_acos.m",
+ fpath67: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/acos.m",
+ fpath68: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapSRi.m",
+ fpath69: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xdot.p",
+ fpath70: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xdotx.p",
+ fpath71: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xdot.p",
+ fpath72: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xdotu.p",
+ fpath73: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xdotu.m",
+ fpath74: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xnrm2.p",
+ fpath75: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_abs.m",
+ fpath76: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath77: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_realmin.m",
+ fpath78: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath79: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xnrm2.p",
+ fpath80: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xnrm2.m",
+ fpath81: "/opt/matlab2014b/toolbox/eml/lib/matlab/matfun/norm.m",
+ fpath82: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/eye.m",
+ fpath83: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientASR.m",
+ fpath84: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/gradientAPSR.m",
+ fpath85: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectT.m",
+ fpath86: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/projectTP.m",
+ fpath87: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_cos.m",
+ fpath88: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/cos.m",
+ fpath89: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_sin.m",
+ fpath90: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/sin.m",
+ fpath91: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/expmapPSR.m",
+ fpath92: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSR.m",
+ fpath93: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/logmapPSRi.m",
+ fpath94: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/constNonSingletonDim.m",
+ fpath95: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_const_nonsingleton_dim.m",
+ fpath96: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_relop.m",
+ fpath97: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/reshape.m",
+ fpath98: "/opt/matlab2014b/toolbox/eml/lib/matlab/matfun/trace.m",
+ fpath99: "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/objPSR.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 218 288 289 290 291 296 304 305 369">1 x 1</option>
+<option value="218 296">1 x <b>:</b>?</option>
+<option value="218 288 304 305"><b>:</b>? x 1</option>
+<option value="1 218 288 289 290 291 296 304 305 369"><b>:</b>? x <b>:</b>?</option>
+<option value="1 289 291 305 369"><b>:</b>? x <b>:</b>? x <b>:</b>?</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 218 288 289 290 291 296 304 305 369">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1 218 288 289 290 291 296 304 305 369">double</option>
+<option value="1">struct</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn " id="F296N3:F1">expmapPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F289N5:F2">gradientAPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F288N6:F3">gradientASR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F304N7:F4">logmapPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F305N8:F5">logmapPSRi</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F218N9:F6">logmapSRi</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F369N10:F7">objPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F1N11:F8">optAPSR_AGD_revBeta</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F290N12:F9">projectT</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F291N13:F10">projectTP</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N11:L1">optAPSR_AGD_revBeta</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F289N5:L2">gradientAPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F291N13:L3">projectTP</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F296N3:L4">expmapPSR</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F304N7:L5">logmapPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F369N10:L6">objPSR</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N11:l1">optAPSR_AGD_revBeta</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F289N5:l2">gradientAPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F291N13:l3">projectTP</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F296N3:l4">expmapPSR</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F304N7:l5">logmapPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F369N10:l6">objPSR</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode218">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F218N9:l7">logmapSRi</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode288">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F288N6:l8">gradientASR</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F218N9:l9">logmapSRi</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode289">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F289N5:l10">gradientAPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F288N6:l11">gradientASR</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode290">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F290N12:l12">projectT</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode291">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F291N13:l13">projectTP</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F290N12:l14">projectT</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode296">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F296N3:l15">expmapPSR</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode304">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F304N7:l16">logmapPSR</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode305">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F305N8:l17">logmapPSRi</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F218N9:l18">logmapSRi</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode369">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F369N10:l19">objPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F305N8:l20">logmapPSRi</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="cos_c.html"><td class="ccode"><a href="#">cos.c</a></td></tr>
+<tr class="ccode" id="cos_h.html"><td class="ccode"><a href="#">cos.h</a></td></tr>
+<tr class="ccode" id="diag_c.html"><td class="ccode"><a href="#">diag.c</a></td></tr>
+<tr class="ccode" id="diag_h.html"><td class="ccode"><a href="#">diag.h</a></td></tr>
+<tr class="ccode" id="eml_error_c.html"><td class="ccode"><a href="#">eml_error.c</a></td></tr>
+<tr class="ccode" id="eml_error_h.html"><td class="ccode"><a href="#">eml_error.h</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_c.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.c</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_h.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.h</a></td></tr>
+<tr class="ccode" id="expmapPSR_c.html"><td class="ccode"><a href="#">expmapPSR.c</a></td></tr>
+<tr class="ccode" id="expmapPSR_h.html"><td class="ccode"><a href="#">expmapPSR.h</a></td></tr>
+<tr class="ccode" id="eye_c.html"><td class="ccode"><a href="#">eye.c</a></td></tr>
+<tr class="ccode" id="eye_h.html"><td class="ccode"><a href="#">eye.h</a></td></tr>
+<tr class="ccode" id="gradientASR_c.html"><td class="ccode"><a href="#">gradientASR.c</a></td></tr>
+<tr class="ccode" id="gradientASR_h.html"><td class="ccode"><a href="#">gradientASR.h</a></td></tr>
+<tr class="ccode" id="logmapPSRi_c.html"><td class="ccode"><a href="#">logmapPSRi.c</a></td></tr>
+<tr class="ccode" id="logmapPSRi_h.html"><td class="ccode"><a href="#">logmapPSRi.h</a></td></tr>
+<tr class="ccode" id="logmapSRi_c.html"><td class="ccode"><a href="#">logmapSRi.c</a></td></tr>
+<tr class="ccode" id="logmapSRi_h.html"><td class="ccode"><a href="#">logmapSRi.h</a></td></tr>
+<tr class="ccode" id="norm_c.html"><td class="ccode"><a href="#">norm.c</a></td></tr>
+<tr class="ccode" id="norm_h.html"><td class="ccode"><a href="#">norm.h</a></td></tr>
+<tr class="ccode" id="objPSR_c.html"><td class="ccode"><a href="#">objPSR.c</a></td></tr>
+<tr class="ccode" id="objPSR_h.html"><td class="ccode"><a href="#">objPSR.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_data_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_data.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_data_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_data.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_emxutil_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_emxutil.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_emxutil_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_emxutil.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_initialize_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_initialize.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_initialize_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_initialize.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_mexutil_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_mexutil.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_mexutil_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_mexutil.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_terminate_c.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_terminate.c</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_terminate_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_terminate.h</a></td></tr>
+<tr class="ccode" id="optAPSR_AGD_revBeta_types_h.html"><td class="ccode"><a href="#">optAPSR_AGD_revBeta_types.h</a></td></tr>
+<tr class="ccode" id="power_c.html"><td class="ccode"><a href="#">power.c</a></td></tr>
+<tr class="ccode" id="power_h.html"><td class="ccode"><a href="#">power.h</a></td></tr>
+<tr class="ccode" id="projectT_c.html"><td class="ccode"><a href="#">projectT.c</a></td></tr>
+<tr class="ccode" id="projectT_h.html"><td class="ccode"><a href="#">projectT.h</a></td></tr>
+<tr class="ccode" id="rdivide_c.html"><td class="ccode"><a href="#">rdivide.c</a></td></tr>
+<tr class="ccode" id="rdivide_h.html"><td class="ccode"><a href="#">rdivide.h</a></td></tr>
+<tr class="ccode" id="repmat_c.html"><td class="ccode"><a href="#">repmat.c</a></td></tr>
+<tr class="ccode" id="repmat_h.html"><td class="ccode"><a href="#">repmat.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+<tr class="ccode" id="sin_c.html"><td class="ccode"><a href="#">sin.c</a></td></tr>
+<tr class="ccode" id="sin_h.html"><td class="ccode"><a href="#">sin.h</a></td></tr>
+<tr class="ccode" id="sqrt_c.html"><td class="ccode"><a href="#">sqrt.c</a></td></tr>
+<tr class="ccode" id="sqrt_h.html"><td class="ccode"><a href="#">sqrt.h</a></td></tr>
+<tr class="ccode" id="squeeze_c.html"><td class="ccode"><a href="#">squeeze.c</a></td></tr>
+<tr class="ccode" id="squeeze_h.html"><td class="ccode"><a href="#">squeeze.h</a></td></tr>
+<tr class="ccode" id="sum_c.html"><td class="ccode"><a href="#">sum.c</a></td></tr>
+<tr class="ccode" id="sum_h.html"><td class="ccode"><a href="#">sum.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+<div class="grayline methodset" onclick="ccodeClick(event,3);">
+<a class="collapsed">Interface Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody3" class="hidden">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="_coder_optAPSR_AGD_revBeta_api_c.html"><td class="ccode"><a href="#">_coder_optAPSR_AGD_revBeta_api.c</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_AGD_revBeta_api_h.html"><td class="ccode"><a href="#">_coder_optAPSR_AGD_revBeta_api.h</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_AGD_revBeta_info_c.html"><td class="ccode"><a href="#">_coder_optAPSR_AGD_revBeta_info.c</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_AGD_revBeta_info_h.html"><td class="ccode"><a href="#">_coder_optAPSR_AGD_revBeta_info.h</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_AGD_revBeta_mex_c.html"><td class="ccode"><a href="#">_coder_optAPSR_AGD_revBeta_mex.c</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x 13</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 28</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 33</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>1 x 32</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 25</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 47</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>1 x 36</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>1 x 39</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>1 x 37</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>1 x 42</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 34</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>unknown</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 45</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td>1 x 21</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>1 x 15</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>1 x 57</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>1 x 40</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT62"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (0)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>22-May-2016 14:18:04</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<div>
+<div class="msgsuccess">Code generation successful. Click here to <a href="javaScript:selectSummaryTab();">view summary</a>.</div>
+</div>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta')">/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">sh optAPSR_AGD_revBeta_mex.sh</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta_mexutil.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta_data.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta_initialize.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta_terminate.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "power.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "sqrt.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "eml_error.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "rdivide.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "squeeze.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "eml_int_forloop_overflow_check.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "gradientASR.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "logmapSRi.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "repmat.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "diag.c"</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "sum.c"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "norm.c"</span>
+<span class="td-line-number">   18   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "eye.c"</span>
+<span class="td-line-number">   19   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "projectT.c"</span>
+<span class="td-line-number">   20   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "expmapPSR.c"</span>
+<span class="td-line-number">   21   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "cos.c"</span>
+<span class="td-line-number">   22   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "sin.c"</span>
+<span class="td-line-number">   23   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "objPSR.c"</span>
+<span class="td-line-number">   24   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "logmapPSRi.c"</span>
+<span class="td-line-number">   25   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_AGD_revBeta_api.c"</span>
+<span class="td-line-number">   26   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_AGD_revBeta_emxutil.c"</span>
+<span class="td-line-number">   27   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_AGD_revBeta_mex.c"</span>
+<span class="td-line-number">   28   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta" -I "/cise/research51/cvgmi_04/jsun/DictLearningRecon/TMI_expts_SR/PSR_mf/codegen/mex/optAPSR_AGD_revBeta/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_AGD_revBeta_info.c"</span>
+<span class="td-line-number">   29   </span><span class="td-line-normal">/usr/bin/gcc -Wl,--version-script,optAPSR_AGD_revBeta_mex_mex.map optAPSR_AGD_revBeta_mexutil.o optAPSR_AGD_revBeta_data.o optAPSR_AGD_revBeta_initialize.o optAPSR_AGD_revBeta_terminate.o optAPSR_AGD_revBeta.o power.o sqrt.o eml_error.o rdivide.o squeeze.o eml_int_forloop_overflow_check.o gradientASR.o logmapSRi.o repmat.o diag.o sum.o norm.o eye.o projectT.o expmapPSR.o cos.o sin.o objPSR.o logmapPSRi.o _coder_optAPSR_AGD_revBeta_api.o optAPSR_AGD_revBeta_emxutil.o _coder_optAPSR_AGD_revBeta_mex.o _coder_optAPSR_AGD_revBeta_info.o -pthread -Wl,--no-undefined -Wl,-rpath-link,/opt/matlab2014b/bin/glnxa64 -shared -L/opt/matlab2014b/bin/glnxa64 -lmx -lmex -lmat -lm -lstdc++  -L/opt/matlab2014b/sys/os/glnxa64 -liomp5  -o optAPSR_AGD_revBeta_mex.mexa64    -lemlrt -lcovrt -lut -lmwmathutil -lmwblas </span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

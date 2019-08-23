@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		costMatrixPSR;
+		costMatrixPSR_initialize;
+		costMatrixPSR_terminate;
+		costMatrixPSR_atexit;
+	local:
+		*;
+};

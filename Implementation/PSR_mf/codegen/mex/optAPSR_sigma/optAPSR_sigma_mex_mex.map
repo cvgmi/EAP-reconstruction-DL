@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		optAPSR_sigma;
+		optAPSR_sigma_initialize;
+		optAPSR_sigma_terminate;
+		optAPSR_sigma_atexit;
+	local:
+		*;
+};

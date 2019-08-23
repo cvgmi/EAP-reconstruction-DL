@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/html/index.css" />
+
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////opt/matlab2014b/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "optAPSR1_mcode.html",
+ fpath1: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/optAPSR.m",
+ lines1: [1, 1, 71],
+ watch1: "optAPSR1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/optAPSR.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/optAPSR.m')\">optAPSR</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 31 to objPSR", "285#srcline1" ], [ "From line 37 to gradientAPSR", "349#srcline1" ], [ "From line 39 to projectTP", "351#srcline1" ], [ "From line 47 to expmapPSR", "361#srcline1" ], [ "From line 50 to objPSR", "285#srcline1" ], , , ,  ],
+ MATLABcode206: "logmapSRi206_mcode.html",
+ fpath206: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapSRi.m",
+ lines206: [1, 1, 20],
+ watch206: "logmapSRi206_watch.html",
+ title206: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapSRi.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapSRi.m')\">logmapSRi</a></span>",
+ tcall206: [ [ "From logmapPSRi line 17", "207#F206N8:B58" ], [ "From gradientASR line 21", "348#F206N8:B54" ] ],
+ scall206: [  ],
+ MATLABcode207: "logmapPSRi207_mcode.html",
+ fpath207: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapPSRi.m",
+ lines207: [1, 1, 19],
+ watch207: "logmapPSRi207_watch.html",
+ title207: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapPSRi.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapPSRi.m')\">logmapPSRi</a></span>",
+ tcall207: [ [ "From objPSR line 25", "285#F207N7:B40" ] ],
+ scall207: [ [ "From line 17 to logmapSRi", "206#srcline1" ] ],
+ MATLABcode285: "objPSR285_mcode.html",
+ fpath285: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/objPSR.m",
+ lines285: [1, 1, 30],
+ watch285: "objPSR285_watch.html",
+ title285: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/objPSR.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/objPSR.m')\">objPSR</a></span>",
+ tcall285: [ [ "From optAPSR line 31", "1#F285N9:B62" ], [ "From optAPSR line 50", "1#F285N9:B139" ] ],
+ scall285: [ [ "From line 25 to logmapPSRi", "207#srcline1" ] ],
+ MATLABcode348: "gradientASR348_mcode.html",
+ fpath348: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientASR.m",
+ lines348: [1, 1, 35],
+ watch348: "gradientASR348_watch.html",
+ title348: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientASR.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientASR.m')\">gradientASR</a></span>",
+ tcall348: [ [ "From gradientAPSR line 19", "349#F348N6:B62" ] ],
+ scall348: [ [ "From line 21 to logmapSRi", "206#srcline1" ] ],
+ MATLABcode349: "gradientAPSR349_mcode.html",
+ fpath349: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientAPSR.m",
+ lines349: [1, 1, 21],
+ watch349: "gradientAPSR349_watch.html",
+ title349: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientAPSR.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientAPSR.m')\">gradientAPSR</a></span>",
+ tcall349: [ [ "From optAPSR line 37", "1#F349N5:B82" ] ],
+ scall349: [ [ "From line 19 to gradientASR", "348#srcline1" ] ],
+ MATLABcode350: "projectT350_mcode.html",
+ fpath350: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectT.m",
+ lines350: [1, 1, 17],
+ watch350: "projectT350_watch.html",
+ title350: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectT.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectT.m')\">projectT</a></span>",
+ tcall350: [ [ "From projectTP line 16", "351#F350N11:B61" ] ],
+ scall350: [  ],
+ MATLABcode351: "projectTP351_mcode.html",
+ fpath351: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectTP.m",
+ lines351: [1, 1, 18],
+ watch351: "projectTP351_watch.html",
+ title351: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectTP.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectTP.m')\">projectTP</a></span>",
+ tcall351: [ [ "From optAPSR line 39", "1#F351N12:B90" ] ],
+ scall351: [ [ "From line 16 to projectT", "350#srcline1" ] ],
+ MATLABcode361: "expmapPSR361_mcode.html",
+ fpath361: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/expmapPSR.m",
+ lines361: [1, 1, 17],
+ watch361: "expmapPSR361_watch.html",
+ title361: "Function: <span class='functionname'><a title='/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/expmapPSR.m' class='functionlink' href=\"matlab: open('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/expmapPSR.m')\">expmapPSR</a></span>",
+ tcall361: [ [ "From optAPSR line 47", "1#F361N3:B118" ] ],
+ scall361: [  ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/optAPSR.m",
+ fpath2: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_class.m",
+ fpath3: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/scalarEg.p",
+ fpath4: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalar_eg.m",
+ fpath5: "/opt/matlab2014b/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath6: "/opt/matlab2014b/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath7: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_switch_helper.m",
+ fpath8: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath9: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath10: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath11: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/squeeze.m",
+ fpath12: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_ndims_varsized.m",
+ fpath13: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexPlus.m",
+ fpath14: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_plus.m",
+ fpath15: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexMinus.m",
+ fpath16: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_index_minus.m",
+ fpath17: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/isBuiltInNumeric.m",
+ fpath18: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/eml_mtimes_helper.m",
+ fpath19: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/inline.p",
+ fpath20: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/use_refblas.p",
+ fpath21: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/threshold.p",
+ fpath22: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xgemm.p",
+ fpath23: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexTimes.m",
+ fpath24: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xgemm.p",
+ fpath25: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/int.p",
+ fpath26: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/size_ptr.p",
+ fpath27: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/c_cast.p",
+ fpath28: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xgemm.m",
+ fpath29: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/assert.m",
+ fpath30: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_assert_valid_size_arg.m",
+ fpath31: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath32: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_is_integer_class.m",
+ fpath33: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath34: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_float_model.m",
+ fpath35: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/scalexpAlloc.p",
+ fpath36: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalexp_alloc.m",
+ fpath37: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_min_or_max.m",
+ fpath38: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath39: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/prodsize.m",
+ fpath40: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/repmat.m",
+ fpath41: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/ismatrix.m",
+ fpath42: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/diag.m",
+ fpath43: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_floor.m",
+ fpath44: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath45: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/power.m",
+ fpath46: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath47: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/assertValidDim.m",
+ fpath48: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_assert_valid_dim.m",
+ fpath49: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/process_sumprod_inputs.m",
+ fpath50: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/combine_vector_elements.m",
+ fpath51: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/private/sumprod.m",
+ fpath52: "/opt/matlab2014b/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath53: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_error.m",
+ fpath54: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_sqrt.m",
+ fpath55: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/sqrt.m",
+ fpath56: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_li_find.m",
+ fpath57: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_isequal_core.m",
+ fpath58: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath59: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath60: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_scalexp_compatible.m",
+ fpath61: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/div.p",
+ fpath62: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_div.m",
+ fpath63: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath64: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_acos.m",
+ fpath65: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/acos.m",
+ fpath66: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapSRi.m",
+ fpath67: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/logmapPSRi.m",
+ fpath68: "/opt/matlab2014b/toolbox/shared/coder/coder/+coder/+internal/constNonSingletonDim.m",
+ fpath69: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_const_nonsingleton_dim.m",
+ fpath70: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_relop.m",
+ fpath71: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/reshape.m",
+ fpath72: "/opt/matlab2014b/toolbox/eml/lib/matlab/matfun/trace.m",
+ fpath73: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/objPSR.m",
+ fpath74: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xdot.p",
+ fpath75: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xdotx.p",
+ fpath76: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xdot.p",
+ fpath77: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xdotu.p",
+ fpath78: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xdotu.m",
+ fpath79: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+blas/xnrm2.p",
+ fpath80: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_abs.m",
+ fpath81: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath82: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/eml_realmin.m",
+ fpath83: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath84: "/opt/matlab2014b/toolbox/coder/coder/+coder/+internal/+refblas/xnrm2.p",
+ fpath85: "/opt/matlab2014b/toolbox/eml/lib/matlab/eml/blas/eml_xnrm2.m",
+ fpath86: "/opt/matlab2014b/toolbox/eml/lib/matlab/matfun/norm.m",
+ fpath87: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/mpower.m",
+ fpath88: "/opt/matlab2014b/toolbox/eml/lib/matlab/elmat/eye.m",
+ fpath89: "/opt/matlab2014b/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath90: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientASR.m",
+ fpath91: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/gradientAPSR.m",
+ fpath92: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectT.m",
+ fpath93: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/projectTP.m",
+ fpath94: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_cos.m",
+ fpath95: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/cos.m",
+ fpath96: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/eml_scalar_sin.m",
+ fpath97: "/opt/matlab2014b/toolbox/eml/lib/matlab/elfun/sin.m",
+ fpath98: "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/expmapPSR.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 206 207 285 348 349 350 351 361">1 x 1</option>
+<option value="206 361">1 x <b>:</b>?</option>
+<option value="206 207 348"><b>:</b>? x 1</option>
+<option value="1 206 207 285 348 349 350 351 361"><b>:</b>? x <b>:</b>?</option>
+<option value="1 207 285 349 351"><b>:</b>? x <b>:</b>? x <b>:</b>?</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 206 207 285 348 349 350 351 361">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1 206 207 285 348 349 350 351 361">double</option>
+<option value="1">struct</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn " id="F361N3:F1">expmapPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F349N5:F2">gradientAPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F348N6:F3">gradientASR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F207N7:F4">logmapPSRi</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F206N8:F5">logmapSRi</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F285N9:F6">objPSR</a></li>
+<li class="leaf  warning"><a href="#" class="fcn " id="F1N10:F7">optAPSR</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F350N11:F8">projectT</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F351N12:F9">projectTP</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed warning"><a href="#" class="fcn " id="F1N10:L1">optAPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F285N9:L2">objPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F349N5:L3">gradientAPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F351N12:L4">projectTP</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F361N3:L5">expmapPSR</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed warning"><a href="#" class="fcn " id="F1N10:l1">optAPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F285N9:l2">objPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F349N5:l3">gradientAPSR</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F351N12:l4">projectTP</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F361N3:l5">expmapPSR</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode206">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F206N8:l6">logmapSRi</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode207">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F207N7:l7">logmapPSRi</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F206N8:l8">logmapSRi</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode285">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F285N9:l9">objPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F207N7:l10">logmapPSRi</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode348">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F348N6:l11">gradientASR</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F206N8:l12">logmapSRi</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode349">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F349N5:l13">gradientAPSR</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F348N6:l14">gradientASR</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode350">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F350N11:l15">projectT</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode351">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F351N12:l16">projectTP</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F350N11:l17">projectT</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode361">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F361N3:l18">expmapPSR</a>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="cos_c.html"><td class="ccode"><a href="#">cos.c</a></td></tr>
+<tr class="ccode" id="cos_h.html"><td class="ccode"><a href="#">cos.h</a></td></tr>
+<tr class="ccode" id="diag_c.html"><td class="ccode"><a href="#">diag.c</a></td></tr>
+<tr class="ccode" id="diag_h.html"><td class="ccode"><a href="#">diag.h</a></td></tr>
+<tr class="ccode" id="eml_error_c.html"><td class="ccode"><a href="#">eml_error.c</a></td></tr>
+<tr class="ccode" id="eml_error_h.html"><td class="ccode"><a href="#">eml_error.h</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_c.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.c</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_h.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.h</a></td></tr>
+<tr class="ccode" id="expmapPSR_c.html"><td class="ccode"><a href="#">expmapPSR.c</a></td></tr>
+<tr class="ccode" id="expmapPSR_h.html"><td class="ccode"><a href="#">expmapPSR.h</a></td></tr>
+<tr class="ccode" id="eye_c.html"><td class="ccode"><a href="#">eye.c</a></td></tr>
+<tr class="ccode" id="eye_h.html"><td class="ccode"><a href="#">eye.h</a></td></tr>
+<tr class="ccode" id="gradientASR_c.html"><td class="ccode"><a href="#">gradientASR.c</a></td></tr>
+<tr class="ccode" id="gradientASR_h.html"><td class="ccode"><a href="#">gradientASR.h</a></td></tr>
+<tr class="ccode" id="logmapPSRi_c.html"><td class="ccode"><a href="#">logmapPSRi.c</a></td></tr>
+<tr class="ccode" id="logmapPSRi_h.html"><td class="ccode"><a href="#">logmapPSRi.h</a></td></tr>
+<tr class="ccode" id="logmapSRi_c.html"><td class="ccode"><a href="#">logmapSRi.c</a></td></tr>
+<tr class="ccode" id="logmapSRi_h.html"><td class="ccode"><a href="#">logmapSRi.h</a></td></tr>
+<tr class="ccode" id="norm_c.html"><td class="ccode"><a href="#">norm.c</a></td></tr>
+<tr class="ccode" id="norm_h.html"><td class="ccode"><a href="#">norm.h</a></td></tr>
+<tr class="ccode" id="objPSR_c.html"><td class="ccode"><a href="#">objPSR.c</a></td></tr>
+<tr class="ccode" id="objPSR_h.html"><td class="ccode"><a href="#">objPSR.h</a></td></tr>
+<tr class="ccode" id="optAPSR_c.html"><td class="ccode"><a href="#">optAPSR.c</a></td></tr>
+<tr class="ccode" id="optAPSR_h.html"><td class="ccode"><a href="#">optAPSR.h</a></td></tr>
+<tr class="ccode" id="optAPSR_data_c.html"><td class="ccode"><a href="#">optAPSR_data.c</a></td></tr>
+<tr class="ccode" id="optAPSR_data_h.html"><td class="ccode"><a href="#">optAPSR_data.h</a></td></tr>
+<tr class="ccode" id="optAPSR_emxutil_c.html"><td class="ccode"><a href="#">optAPSR_emxutil.c</a></td></tr>
+<tr class="ccode" id="optAPSR_emxutil_h.html"><td class="ccode"><a href="#">optAPSR_emxutil.h</a></td></tr>
+<tr class="ccode" id="optAPSR_initialize_c.html"><td class="ccode"><a href="#">optAPSR_initialize.c</a></td></tr>
+<tr class="ccode" id="optAPSR_initialize_h.html"><td class="ccode"><a href="#">optAPSR_initialize.h</a></td></tr>
+<tr class="ccode" id="optAPSR_mexutil_c.html"><td class="ccode"><a href="#">optAPSR_mexutil.c</a></td></tr>
+<tr class="ccode" id="optAPSR_mexutil_h.html"><td class="ccode"><a href="#">optAPSR_mexutil.h</a></td></tr>
+<tr class="ccode" id="optAPSR_terminate_c.html"><td class="ccode"><a href="#">optAPSR_terminate.c</a></td></tr>
+<tr class="ccode" id="optAPSR_terminate_h.html"><td class="ccode"><a href="#">optAPSR_terminate.h</a></td></tr>
+<tr class="ccode" id="optAPSR_types_h.html"><td class="ccode"><a href="#">optAPSR_types.h</a></td></tr>
+<tr class="ccode" id="power_c.html"><td class="ccode"><a href="#">power.c</a></td></tr>
+<tr class="ccode" id="power_h.html"><td class="ccode"><a href="#">power.h</a></td></tr>
+<tr class="ccode" id="projectT_c.html"><td class="ccode"><a href="#">projectT.c</a></td></tr>
+<tr class="ccode" id="projectT_h.html"><td class="ccode"><a href="#">projectT.h</a></td></tr>
+<tr class="ccode" id="rdivide_c.html"><td class="ccode"><a href="#">rdivide.c</a></td></tr>
+<tr class="ccode" id="rdivide_h.html"><td class="ccode"><a href="#">rdivide.h</a></td></tr>
+<tr class="ccode" id="repmat_c.html"><td class="ccode"><a href="#">repmat.c</a></td></tr>
+<tr class="ccode" id="repmat_h.html"><td class="ccode"><a href="#">repmat.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+<tr class="ccode" id="sin_c.html"><td class="ccode"><a href="#">sin.c</a></td></tr>
+<tr class="ccode" id="sin_h.html"><td class="ccode"><a href="#">sin.h</a></td></tr>
+<tr class="ccode" id="sqrt_c.html"><td class="ccode"><a href="#">sqrt.c</a></td></tr>
+<tr class="ccode" id="sqrt_h.html"><td class="ccode"><a href="#">sqrt.h</a></td></tr>
+<tr class="ccode" id="squeeze_c.html"><td class="ccode"><a href="#">squeeze.c</a></td></tr>
+<tr class="ccode" id="squeeze_h.html"><td class="ccode"><a href="#">squeeze.h</a></td></tr>
+<tr class="ccode" id="sum_c.html"><td class="ccode"><a href="#">sum.c</a></td></tr>
+<tr class="ccode" id="sum_h.html"><td class="ccode"><a href="#">sum.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+<div class="grayline methodset" onclick="ccodeClick(event,3);">
+<a class="collapsed">Interface Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody3" class="hidden">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="_coder_optAPSR_api_c.html"><td class="ccode"><a href="#">_coder_optAPSR_api.c</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_api_h.html"><td class="ccode"><a href="#">_coder_optAPSR_api.h</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_info_c.html"><td class="ccode"><a href="#">_coder_optAPSR_info.c</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_info_h.html"><td class="ccode"><a href="#">_coder_optAPSR_info.h</a></td></tr>
+<tr class="ccode" id="_coder_optAPSR_mex_c.html"><td class="ccode"><a href="#">_coder_optAPSR_mex.c</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 13</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 28</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x 33</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>1 x 32</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 25</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 47</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>1 x 36</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>1 x 39</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>1 x 37</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>1 x 31</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 21</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 34</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>unknown</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td>1 x 45</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>1 x 15</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>1 x 57</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>1 x 40</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT62"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (2)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>23-Apr-2015 14:33:32</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">2</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<table class="grid" summary="This table lists the messages produced during code generation." cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th id="msgorder" scope="col"><div class="d1"><div class="d2"><a href="#">Order</a></div></div></th>
+<th id="msgtype" scope="col"><div class="d1"><div class="d2"><a href="#">Type</a></div></div></th>
+<th id="function" scope="col"><div class="d1"><div class="d2"><a href="#">Function</a></div></div></th>
+<th id="location" scope="col"><div class="d1"><div class="d2"><a href="#">Line</a></div></div></th>
+<th id="text" scope="col"><div class="d1"><div class="d2"><a href="#">Description</a></div></div></th>
+</tr>
+</thead>
+<tbody onmouseover="messagesMouseOver(event);" onmouseout="messagesMouseOut(event);" onclick="messagesClick(event);"">
+<tr class="message warning" id="M1F1">
+<td class="msgorder" headers="msgorder"><a href="#">1</a></td>
+<td class="warning" headers="msgtype"></td>
+<td class="function" headers="function"><div>optAPSR</div></td>
+<td class="location" headers="location"><div>35</div></td>
+<td class="text" headers="text"><div>Index variable iter is used outside its corresponding FOR loop. The run-time behavior will differ from MATLAB if the loop is not executed.</div></td>
+</tr>
+<tr class="message warning" id="M2F1">
+<td class="msgorder" headers="msgorder"><a href="#">2</a></td>
+<td class="warning" headers="msgtype"></td>
+<td class="function" headers="function"><div>optAPSR</div></td>
+<td class="location" headers="location"><div>43</div></td>
+<td class="text" headers="text"><div>Index variable k is used outside its corresponding FOR loop. The run-time behavior will differ from MATLAB if the loop is not executed.</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR')">/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">sh optAPSR_mex.sh</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_mexutil.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_data.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_initialize.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_terminate.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "objPSR.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "logmapPSRi.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "squeeze.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "eml_int_forloop_overflow_check.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "logmapSRi.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "repmat.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "diag.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "power.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "sum.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "sqrt.c"</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "eml_error.c"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "rdivide.c"</span>
+<span class="td-line-number">   18   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "gradientASR.c"</span>
+<span class="td-line-number">   19   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "norm.c"</span>
+<span class="td-line-number">   20   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "eye.c"</span>
+<span class="td-line-number">   21   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "projectT.c"</span>
+<span class="td-line-number">   22   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "expmapPSR.c"</span>
+<span class="td-line-number">   23   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "cos.c"</span>
+<span class="td-line-number">   24   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "sin.c"</span>
+<span class="td-line-number">   25   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_api.c"</span>
+<span class="td-line-number">   26   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "optAPSR_emxutil.c"</span>
+<span class="td-line-number">   27   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_mex.c"</span>
+<span class="td-line-number">   28   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32 -fopenmp -DOMPLIBNAME="\"/opt/matlab2014b/sys/os/glnxa64/libiomp5.so\"" -O -DNDEBUG  -I "/opt/matlab2014b/simulink/include" -I "/opt/matlab2014b/toolbox/shared/simtargets" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR" -I "/blank0/blank0/DictL_ProductSpace/Discrete/SRProductSpace/mf/codegen/mex/optAPSR/interface" -I "/opt/matlab2014b/extern/include" -I "." "interface/_coder_optAPSR_info.c"</span>
+<span class="td-line-number">   29   </span><span class="td-line-normal">/usr/bin/gcc -Wl,--version-script,optAPSR_mex_mex.map optAPSR_mexutil.o optAPSR_data.o optAPSR_initialize.o optAPSR_terminate.o optAPSR.o objPSR.o logmapPSRi.o squeeze.o eml_int_forloop_overflow_check.o logmapSRi.o repmat.o diag.o power.o sum.o sqrt.o eml_error.o rdivide.o gradientASR.o norm.o eye.o projectT.o expmapPSR.o cos.o sin.o _coder_optAPSR_api.o optAPSR_emxutil.o _coder_optAPSR_mex.o _coder_optAPSR_info.o -pthread -Wl,--no-undefined -Wl,-rpath-link,/opt/matlab2014b/bin/glnxa64 -shared -L/opt/matlab2014b/bin/glnxa64 -lmx -lmex -lmat -lm -lstdc++  -L/opt/matlab2014b/sys/os/glnxa64 -liomp5  -o optAPSR_mex.mexa64    -lemlrt -lcovrt -lut -lmwmathutil -lmwblas </span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

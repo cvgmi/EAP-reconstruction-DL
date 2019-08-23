@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		optAPSR_AGD_revBeta;
+		optAPSR_AGD_revBeta_initialize;
+		optAPSR_AGD_revBeta_terminate;
+		optAPSR_AGD_revBeta_atexit;
+	local:
+		*;
+};

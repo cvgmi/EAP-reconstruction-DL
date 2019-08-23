@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		EstimatedPX;
+		EstimatedPX_initialize;
+		EstimatedPX_terminate;
+		EstimatedPX_atexit;
+	local:
+		*;
+};

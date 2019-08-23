@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		objPSR;
+		objPSR_initialize;
+		objPSR_terminate;
+		objPSR_atexit;
+	local:
+		*;
+};
