@@ -17,3 +17,9 @@ If you use this code please cite the following papers:
 * [CVX Package by CVX Research](http://cvxr.com/cvx/download/)
 
 
+## Quickstart
+
+We provide an implementation of the algorithm presented in the paper along with synthetic data and an example script to
+run. The main patch-based reconstruction function can be found in `./Implementation/PSR_mf/dictionaryPSR.m`. The example
+script `example_patch_recon.m` runs the patch-based reconstruction function on several synthetic samples and saves the
+generated dictionary and the reconstruction.
